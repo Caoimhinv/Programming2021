@@ -1,4 +1,4 @@
-# program to see if 2 equals 3
+# Program to assess if 2 equals 3!
 # Author: Caoimhin Vallely
 
 number1 = 2
