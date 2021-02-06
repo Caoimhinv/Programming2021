@@ -2,7 +2,7 @@
 
 import random
 
-fruits = ['Apple', 'Berry', 'Orange', 'Banana', 'Pear', 'kiwi']
+fruits = ['Apple', 'Berry', 'Orange', 'Banana', 'Pear', 'Kiwi']
 
 # we want a random number between 0 and length -1
 index = random.randint(0,len(fruits)-1)
