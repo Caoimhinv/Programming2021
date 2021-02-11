@@ -1,4 +1,4 @@
-# program that inouts a number and outputs whether it's even or not
+# program that inputs a number and outputs whether it's even or not
 # Author: Caoimhin Vallely
 
 number = int(input("Enter an integer:"))
