@@ -1,5 +1,5 @@
 # anonymous functions
-# lamda
+# And messing with lamda
 # Author: Andrew Beatty
 
 # def doubler (num):
