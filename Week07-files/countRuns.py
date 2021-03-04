@@ -1,13 +1,4 @@
-# filename = "count.txt"
-
-import os.path
-filename = "cunt.txt"
-if not os.path.isfile(filename):
-    print("File does not exist")
-    # initialise file here
-    writeNumber(0)
-else:
-    print("Hi")
+filename = "count.txt"
 
 def readNumber():
     with open(filename) as f:
