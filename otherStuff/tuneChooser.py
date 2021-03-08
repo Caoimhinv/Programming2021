@@ -1,16 +1,12 @@
-# Testin and reading a csv file
+# Acesses a database and returns a random row
 # Author: Caoimhin Vallely
 
 import csv
+import random
 
 fileName = "tuneDatabase.csv"
 
 with open(fileName, "rt") as tunes:
-    csvReader = csv.reader(tunes, delimiter = ',')
-    firstLine = True
-    count = 0
-    for line in csvReader:
-        if firstLine:
-            firstLine = False
-            continue
-        print(line)
+    csvReader = csv.reader(tunes)
+    tuneOfTheDay = random.choice(list(csvReader))
+    print tuneOfTheDay
