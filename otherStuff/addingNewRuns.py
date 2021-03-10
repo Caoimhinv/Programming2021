@@ -12,5 +12,9 @@ def addNewRun(fileName, newEntry):
         # Add contents of list as last row in the csv file
         csv_writer.writerow(newEntry)
 
-row_contents = input("What did you do today Caoimhin?: ")
+row_contents = str(input("What did you do today Caoimhin?: "))
 addNewRun('runningDatabase.csv', row_contents)
+
+# to do:
+# - automatically add todays date?
+# - separate questions for route and distance?
