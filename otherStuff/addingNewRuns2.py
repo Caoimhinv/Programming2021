@@ -10,7 +10,7 @@ def addNewRun():
     w = csv.writer(newEntry)
 
 #   # ref for date - https://datatofish.com/python-current-date/
-    Route = input("Where'd we run today (string)?: ")
+    Route = input("Where'd we run today Caoimhin (as a string)?: ")
     Date = str(datetime.datetime.today().strftime ('%d/%m/%Y'))
     Distance = float(input("How far'd you go?: "))
     distanceRound = round(Distance, 2)
@@ -18,5 +18,3 @@ def addNewRun():
     print("Database updated with ", Route, Date, distanceRound)
 
 addNewRun()
-
-# still need to work out a way of entering route without exclamatin marks

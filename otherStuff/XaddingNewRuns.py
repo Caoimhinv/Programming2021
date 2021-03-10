@@ -1,6 +1,8 @@
 # programme to add runs/routes to my training database
 # Author: Caoimhin Vallely
 
+# N.B. Started again and created a better script - addindNewRuns2.py
+
 from csv import writer
 
 # solution referenced from https://thispointer.com/python-how-to-append-a-new-row-to-an-existing-csv-file/
