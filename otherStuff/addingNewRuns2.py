@@ -10,11 +10,11 @@ def addNewRun():
     w = csv.writer(newEntry)
 
 #   # ref for date - https://datatofish.com/python-current-date/
-    Route = input("Where'd we run today Caoimhin (as a string)?: ")
-    Date = str(datetime.datetime.today().strftime ('%d/%m/%Y'))
+    Route = input("Where'd we run today Caoimhin?: ")
+    Date = str(datetime.datetime.today().strftime ('%d/%m/%Y')) #todays date in my preferred format
     Distance = float(input("How far'd you go?: "))
-    distanceRound = round(Distance, 2)
+    distanceRound = round(Distance, 2) # round to 2 decimal places
     w.writerow([Route, Date, distanceRound])  
-    print("Database updated with ", Route, Date, distanceRound)
+    print("Database is updated with ", Route, Date, distanceRound)
 
 addNewRun()
