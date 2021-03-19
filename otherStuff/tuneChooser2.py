@@ -5,10 +5,11 @@
 import pandas as pd
 import csv
 
-df = pd.read_csv('/Users/caoimhinvallely/Desktop/Programming/Programming2021/otherStuff/tuneDatabase.csv', nrows=33, index_col=0, header=None)
+current = 31
+df = pd.read_csv('/Users/caoimhinvallely/Desktop/Programming/Programming2021/otherStuff/tuneDatabase.csv', nrows=current+2, index_col=0, header=None)
 tunesOfTheDay = df.sample(n=5)
 print("5 TUNES TO REVISE TODAY:\n", tunesOfTheDay, "\n")
-recentlyLearnedTunes = pd.read_csv('/Users/caoimhinvallely/Desktop/Programming/Programming2021/otherStuff/tuneDatabase.csv', nrows=3, skiprows=31, index_col=0, header=None)
+recentlyLearnedTunes = pd.read_csv('/Users/caoimhinvallely/Desktop/Programming/Programming2021/otherStuff/tuneDatabase.csv', nrows=3, skiprows=current, index_col=0, header=None)
 print ("RECENTLY LEARNED TUNES TO PRACTICE:\n", recentlyLearnedTunes, "\n")
-todaysNewTune = pd.read_csv('/Users/caoimhinvallely/Desktop/Programming/Programming2021/otherStuff/tuneDatabase.csv', nrows=1, skiprows=34, index_col=0, header=None)
+todaysNewTune = pd.read_csv('/Users/caoimhinvallely/Desktop/Programming/Programming2021/otherStuff/tuneDatabase.csv', nrows=1, skiprows=current+3, index_col=0, header=None)
 print("NEW TUNE FOR TODAY:\n ", todaysNewTune, "\n")
