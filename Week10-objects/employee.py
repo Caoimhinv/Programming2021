@@ -15,8 +15,8 @@ class Employee:
 
     def logminutes(self, project, minutes):
         now = dt.datetime.now
-        timesheetentry = Timesheetentry(project, now, minutes)
-        self.timesheets.append(timesheetentry)
+        timeSheetEntry = Timesheetentry(project, now, minutes)
+        self.timesheets.append(timeSheetEntry)
 
     def gettotaltime(self):
         total_minutes = 0
