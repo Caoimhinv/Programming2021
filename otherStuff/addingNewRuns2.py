@@ -15,6 +15,6 @@ def addNewRun():
     Distance = float(input("How far'd you go?: "))
     distanceRound = round(Distance, 2) # round to 2 decimal places
     w.writerow([Route, Date, distanceRound])  
-    print("Database is updated with ", Route, Date, distanceRound)
+    print("Database is updated with: ", Route, Date, distanceRound, "km")
 
 addNewRun()
