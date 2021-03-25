@@ -1,6 +1,7 @@
 import pandas as pd 
 
-log_filename = '/Users/caoimhinvallely/Desktop/Programming/Programming2021/Week11-pandas/access.log'
+path = '/Users/caoimhinvallely/Desktop/Programming/Programming2021/Week11-pandas/'
+log_filename = path + 'access.log'
 
 col_names= ('ip',
     'dash1',
